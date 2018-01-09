@@ -16,5 +16,5 @@ pub use alloc::rc::Rc;
 pub use alloc::boxed::{Box, FnBox};
 pub use alloc::arc::{Arc, Weak};
 
-pub use collections::vec::Vec;
-pub use collections::string::*;
+pub use alloc::vec::Vec;
+pub use alloc::string::*;

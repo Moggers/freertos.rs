@@ -110,7 +110,7 @@ pub trait MutexInnerImpl where Self: Sized + Drop {
     fn give(&self);
 }
 
-struct MutexNormal(FreeRtosSemaphoreHandle);
+pub struct MutexNormal(FreeRtosSemaphoreHandle);
 
 impl MutexInnerImpl for MutexNormal {
     fn create() -> Result<Self, FreeRtosError> {

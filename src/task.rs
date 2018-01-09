@@ -4,6 +4,7 @@ use shim::*;
 use units::*;
 use utils::*;
 use isr::*;
+use alloc::string::ToString;
 
 unsafe impl Send for Task {}
 
